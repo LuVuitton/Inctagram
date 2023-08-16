@@ -96,8 +96,8 @@ export const Navigation: React.FC<Props> = ({ pathname, paidAccount, userData })
           </li>
           <li>
             <Link
-              href={"/my-profile"}
-              className={`${pathname === "/my-profile" ? `${s.nav__item__active} ${s.nav__item}` : `${s.nav__item}`}`}
+              href={"/profile"}
+              className={`${pathname === "/profile" ? `${s.nav__item__active} ${s.nav__item}` : `${s.nav__item}`}`}
             >
               <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g>

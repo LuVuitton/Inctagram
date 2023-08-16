@@ -7,10 +7,32 @@ import { SubscriptionRadio } from "./SubscriptionRadio/SubscriptionRadio";
 import { Subscription } from "./Subscription/Subscription";
 import { Stripe } from "../../../../../components/Stripe/Stripe";
 import { PayPal } from "../../../../../components/PayPal/PayPal";
+import Image from "next/image";
+import {
+  SubscriptionType,
+  useCreateSubscriptionMutation,
+  useGetPaymentsQuery,
+} from "../../../../../api/subscriptions.api";
+import { Loader } from "../../../../../components/Loader/Loader";
+
+const baseUrl = "https://inctagram.vercel.app/";
 
 export const AccountManagementTab = () => {
   const [accountTypeValue, setAccountTypeValue] = useState("personal");
-  const [subTypeValue, setSubTypeValue] = useState("10");
+  const [subTypeValue, setSubTypeValue] = useState<SubscriptionType>("MONTHLY");
+
+  const { data: dataPayments } = useGetPaymentsQuery();
+  const [createSubscription, { data, isLoading }] = useCreateSubscriptionMutation();
+  console.log(dataPayments);
+
+  const onCreateStripeSubscription = () => {
+    createSubscription({ paymentType: "STRIPE", amount: 1, typeSubscription: subTypeValue, baseUrl })
+      .unwrap()
+      .then((res) => {
+        window.location.href = res.url;
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <Tabs.Content className={s.TabsContent} value="accountManagement">
@@ -33,11 +55,18 @@ export const AccountManagementTab = () => {
                 <Image className={s.tab__img} src={"/img/paypal.png"} alt={"paypal"} width={70} height={47} />
               </div>*/}
               <p>or</p>
-              <Stripe subTypeValue={subTypeValue} />
+              <div
+                className={`${s.wrapper} ${isLoading ? "cursor-not-allowed" : "cursor-pointer"}`}
+                onClick={onCreateStripeSubscription}
+              >
+                <Image className={s.img} src={"/img/stripe.png"} alt={"stripe"} width={70} height={30} />
+              </div>
+              {/*<Stripe subTypeValue={subTypeValue} />*/}
             </div>
           </>
         )}
       </div>
+      {isLoading && <Loader />}
     </Tabs.Content>
   );
 };

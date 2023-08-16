@@ -29,12 +29,14 @@ export const subscriptionsApi = createApi({
         };
       },
     }),
-    createSubscription: builder.mutation<any, CreateSubscription>({
+    createSubscription: builder.mutation<{ url: string }, CreateSubscription>({
       query: (arg: CreateSubscription) => {
         return {
           url: "subscriptions",
           method: "POST",
-          body: arg, //maybe mistake
+          body: {
+            ...arg,
+          }, //maybe mistake
         };
       },
     }),
@@ -49,12 +51,15 @@ export const subscriptionsApi = createApi({
   }),
 });
 
-export const { useGetPaymentsQuery } = subscriptionsApi;
+export const { useGetPaymentsQuery, useCreateSubscriptionMutation, useGetCurrentSubscriptionQuery } = subscriptionsApi;
+
+export type SubscriptionType = "MONTHLY" | "SEMI_ANNUALLY" | "YEARLY";
 
 type CreateSubscription = {
-  typeSubscription: string;
-  paymentType: string;
+  typeSubscription: SubscriptionType;
+  paymentType: "STRIPE" | "PAYPAL";
   amount: number;
+  baseUrl: string;
 };
 
 export type GetCostOfSubscription = {
