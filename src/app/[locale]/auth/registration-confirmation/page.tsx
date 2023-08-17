@@ -11,6 +11,7 @@ const RegistrationConfirmation = ({
   searchParams: { code: string };
 }) => {
   const t = useTranslations("RegistrationConfirmationPage");
+  console.log(searchParams.code);
 
   return <Confirm code={String(searchParams.code)} translate={t} />;
 };

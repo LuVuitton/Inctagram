@@ -11,12 +11,10 @@ import { Loader } from "../../../../components/Loader/Loader";
 import { useTranslations } from "next-intl";
 import { CreatePost } from "../CreatePost/CreatePost";
 import { GetResponse } from "../../../../api/profile.api";
-import { cookies } from "next/headers";
-import { removeCookie } from "../../../../helpers/cookies";
 
 type Props = {
   pathname: string;
-  paidAccount: boolean;
+  paidAccount?: boolean;
   userData?: GetResponse;
 };
 

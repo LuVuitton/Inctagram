@@ -12,6 +12,7 @@ type Props = {
   translateName: string;
   minLength: number;
   maxLength: number;
+  placeholder: string;
 };
 
 export const SettingsFormItem: React.FC<Props> = ({
@@ -24,6 +25,7 @@ export const SettingsFormItem: React.FC<Props> = ({
   translateName,
   maxLength,
   minLength,
+  placeholder,
 }) => {
   return (
     <div className={s.form__itemWrapper}>
@@ -32,6 +34,7 @@ export const SettingsFormItem: React.FC<Props> = ({
         id={id}
         {...register(registerName, { required: true, minLength, maxLength })}
         className={`${error ? s.form__textInput__error : s.form__textInput}`}
+        placeholder={placeholder}
       />
       {error && <p className={s.form__error}>{errorMessage}</p>}
     </div>

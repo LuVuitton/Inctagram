@@ -5,7 +5,7 @@ import { Navigation } from "../../../my-profile/Navigation/Navigation";
 import { usePathname } from "next-intl/client";
 
 import s from "./Edit.module.scss";
-import { useParams, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 const Edit = () => {
   const pathname = usePathname();
@@ -17,7 +17,7 @@ const Edit = () => {
     <>
       <div className={s.container}>
         <div className={s.wrapper} id={"wrapper"}>
-          <Navigation pathname={pathname} paidAccount={false} />
+          <Navigation pathname={pathname} />
           <div style={{ gridArea: "profile", paddingTop: "10%", fontSize: "25px" }}>
             {success === "true" ? (
               <p>

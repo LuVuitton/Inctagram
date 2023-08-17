@@ -20,7 +20,7 @@ type Props = {
 export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [updateProfile, { isLoading }] = usePutProfileMutation();
-  const [getUserProfile] = useLazyGetProfileQuery();
+  const [getUserProfile, { isLoading: isLoadingProfile }] = useLazyGetProfileQuery();
 
   const {
     register,
@@ -68,6 +68,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
           translateName={"username"}
           minLength={5}
           maxLength={15}
+          placeholder={"Type username..."}
         />
 
         <SettingsFormItem
@@ -80,6 +81,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
           translateName={"firstname"}
           minLength={2}
           maxLength={15}
+          placeholder={"Type firstname..."}
         />
 
         <SettingsFormItem
@@ -92,6 +94,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
           translateName={"lastname"}
           minLength={2}
           maxLength={15}
+          placeholder={"Type lastname..."}
         />
 
         <div className={s.form__itemWrapper}>
@@ -109,6 +112,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
           translateName={"city"}
           minLength={3}
           maxLength={20}
+          placeholder={"Type city..."}
         />
 
         <div className={s.form__itemWrapper}>
@@ -117,6 +121,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
             id={"settings-profile-aboutMe"}
             {...register("aboutMe", { required: true, minLength: 10, maxLength: 100 })}
             className={`${errors.aboutMe ? s.form__textarea__error : s.form__textarea}`}
+            placeholder={"Type about me..."}
           />
           {errors.aboutMe && <p className={s.form__textareaError}>{errors.aboutMe.message}</p>}
         </div>
@@ -126,6 +131,7 @@ export const SettingsForm: React.FC<Props> = ({ userBirthday, translate }) => {
         </div>
       </form>
       {isLoading && <Loader />}
+      {isLoadingProfile && <Loader />}
     </>
   );
 };

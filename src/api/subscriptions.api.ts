@@ -51,7 +51,13 @@ export const subscriptionsApi = createApi({
   }),
 });
 
-export const { useGetPaymentsQuery, useCreateSubscriptionMutation, useGetCurrentSubscriptionQuery } = subscriptionsApi;
+export const {
+  useGetPaymentsQuery,
+  useCreateSubscriptionMutation,
+  useGetCurrentSubscriptionQuery,
+  useCancelAutoRenewalMutation,
+  useGetCostOfSubscriptionQuery,
+} = subscriptionsApi;
 
 export type SubscriptionType = "MONTHLY" | "SEMI_ANNUALLY" | "YEARLY";
 

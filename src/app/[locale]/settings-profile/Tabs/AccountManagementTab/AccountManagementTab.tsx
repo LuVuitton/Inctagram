@@ -1,32 +1,56 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as Tabs from "@radix-ui/react-tabs";
 
 import s from "./AccountManagementTab.module.scss";
 import { AccountTypeRadio } from "./AccountTypeRadio/AccountTypeRadio";
 import { SubscriptionRadio } from "./SubscriptionRadio/SubscriptionRadio";
 import { Subscription } from "./Subscription/Subscription";
-import { Stripe } from "../../../../../components/Stripe/Stripe";
 import { PayPal } from "../../../../../components/PayPal/PayPal";
 import Image from "next/image";
 import {
+  GetCurrentSubscription,
   SubscriptionType,
   useCreateSubscriptionMutation,
+  useGetCurrentSubscriptionQuery,
   useGetPaymentsQuery,
 } from "../../../../../api/subscriptions.api";
 import { Loader } from "../../../../../components/Loader/Loader";
 
-const baseUrl = "https://inctagram.vercel.app/";
-
 export const AccountManagementTab = () => {
+  const [userSubInfo, setUserSubInfo] = useState<GetCurrentSubscription>({
+    data: [
+      {
+        dateOfPayment: "",
+        endDateOfSubscription: "",
+        autoRenewal: false,
+        subscriptionId: "",
+        userId: 0,
+      },
+    ],
+    hasAutoRenewal: false,
+  });
   const [accountTypeValue, setAccountTypeValue] = useState("personal");
   const [subTypeValue, setSubTypeValue] = useState<SubscriptionType>("MONTHLY");
+  const [baseUrl, setBaseUrl] = useState<any>("");
 
   const { data: dataPayments } = useGetPaymentsQuery();
+  const { data: currentSubData, isLoading: isLoadingSub } = useGetCurrentSubscriptionQuery();
+
+  console.log(currentSubData);
+
   const [createSubscription, { data, isLoading }] = useCreateSubscriptionMutation();
-  console.log(dataPayments);
+
+  useEffect(() => {
+    if (currentSubData?.data[0]?.subscriptionId.length! > 0) {
+      setAccountTypeValue("business");
+    }
+
+    setBaseUrl(window.location);
+    setUserSubInfo(currentSubData!);
+  }, [currentSubData]);
 
   const onCreateStripeSubscription = () => {
-    createSubscription({ paymentType: "STRIPE", amount: 1, typeSubscription: subTypeValue, baseUrl })
+    createSubscription({ paymentType: "STRIPE", amount: 1, typeSubscription: subTypeValue, baseUrl: baseUrl.origin })
       .unwrap()
       .then((res) => {
         window.location.href = res.url;
@@ -37,7 +61,13 @@ export const AccountManagementTab = () => {
   return (
     <Tabs.Content className={s.TabsContent} value="accountManagement">
       <div className={s.tab}>
-        <Subscription />
+        {userSubInfo?.data[0]?.subscriptionId && (
+          <Subscription
+            dateOfPayment={userSubInfo?.data[0]?.dateOfPayment}
+            expireAt={userSubInfo?.data[0]?.endDateOfSubscription}
+            autoRenewal={userSubInfo?.hasAutoRenewal}
+          />
+        )}
 
         <p className={s.tab__name}>Account type:</p>
         <div className={s.tab__wrapper}>
@@ -45,7 +75,11 @@ export const AccountManagementTab = () => {
         </div>
         {accountTypeValue === "business" && (
           <>
-            <p className={s.tab__name}>Your subscription costs:</p>
+            {userSubInfo?.data[0]?.subscriptionId.length > 0 ? (
+              <p className={s.tab__name}>Change your subscription:</p>
+            ) : (
+              <p className={s.tab__name}>Your subscription costs:</p>
+            )}
             <div className={s.tab__wrapper}>
               <SubscriptionRadio subTypeValue={subTypeValue} setSubTypeValue={setSubTypeValue} />
             </div>
@@ -67,6 +101,7 @@ export const AccountManagementTab = () => {
         )}
       </div>
       {isLoading && <Loader />}
+      {isLoadingSub && <Loader />}
     </Tabs.Content>
   );
 };
