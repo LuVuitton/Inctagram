@@ -51,6 +51,14 @@ export let profileApi = createApi({
         };
       },
     }),
+    getMyPayments: builder.query<GetMyPayments[], void>({
+      query: () => {
+        return {
+          url: "subscriptions/my-payments",
+          method: "GET",
+        };
+      },
+    }),
   }),
 });
 
@@ -61,6 +69,7 @@ export let {
   useDeleteProfileAvatarMutation,
   useDeleteProfileMutation,
   useLazyGetProfileQuery,
+  useLazyGetMyPaymentsQuery,
 } = profileApi;
 
 export type PostProfileAvatar = {
@@ -92,4 +101,14 @@ export interface Avatar {
   width: number;
   height: number;
   fileSize: number;
+}
+
+export interface GetMyPayments {
+  userId: number;
+  subscriptionId: string;
+  dateOfPayment: string;
+  endDateOfSubscription: string;
+  price: number;
+  subscriptionType: string;
+  paymentType: string;
 }

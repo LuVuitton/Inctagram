@@ -44,7 +44,7 @@ const SignIn: React.FC<Props> = ({ translate }) => {
         }
       });
   };
-
+  console.log(isSuccess);
   if (isSuccess) redirect("/my-profile");
   return (
     <>

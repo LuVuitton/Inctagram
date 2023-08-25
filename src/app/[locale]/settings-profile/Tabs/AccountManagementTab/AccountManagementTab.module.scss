@@ -52,3 +52,34 @@
   }
 }
 
+
+@mixin border(){
+  border: solid 1px rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+
+.table{
+  margin-top: 25px;
+  @include border();
+  width: 100%;
+  .thead{
+    @include border();
+    background: #171717;
+    tr{
+      @include border();
+      th{
+        @include border();
+      }
+    }
+  }
+  .tbody{
+    tr{
+      @include border();
+      td{
+        @include border();;
+      }
+    }
+    @include border();
+  }
+}
+
