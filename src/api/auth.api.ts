@@ -16,7 +16,7 @@ export let authApi = createApi({
     }),
     signInGitHub: builder.mutation<{ accessToken: string }, { code: string }>({
       query: (body) => ({
-        url: "/auth/github/sign-in",
+        url: "auth/github/login",
         method: "POST",
         body,
       }),

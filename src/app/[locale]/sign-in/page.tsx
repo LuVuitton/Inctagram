@@ -1,23 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import SignIn from "./SignIn/SignIn";
 import { useTranslations } from "next-intl";
-import { CLIENT_ID_GITHUB } from "../../../api/gitHubOauth.api";
-import { useSignInGitHubMutation } from "../../../api/auth.api";
-import { useParamsCustomHook } from "../../../utils/useParamsCustomHook";
+const CLIENT_ID_GITHUB = "dba93fb3a5299659f092";
 
 const SignInPage = () => {
   const t = useTranslations("SignInPage");
-  const [oAuth, { data }] = useSignInGitHubMutation();
-  const param = useParamsCustomHook(["code"]);
-  useEffect(() => {
-    console.log(param[0]);
-    if (param) {
-      oAuth({ code: param[0] });
-      if (data) console.log(data);
-    }
-  }, []);
+
   const loginWithGitHub = () => {
     window.location.assign("https://github.com/login/oauth/authorize?client_id=" + CLIENT_ID_GITHUB);
   };
