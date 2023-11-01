@@ -2,7 +2,6 @@ import React, { ReactNode, useState } from "react";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
 import { redirect } from "next/navigation";
 import { Loader } from "@/components/Loader";
 import { FormItem } from "../../sign-up/SignUp/SignUpForm/FormItem";
