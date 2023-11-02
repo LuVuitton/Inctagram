@@ -24,7 +24,8 @@
     border-bottom: 1px solid var(--dark-100);
 }
 
-.modal__header, modal__footer {
+.modal__header,
+modal__footer {
     padding: 12px;
 }
 
@@ -44,7 +45,6 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 12px;
-
 }
 
 .modal__close {

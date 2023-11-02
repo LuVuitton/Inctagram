@@ -1,46 +1,46 @@
 .collection {
-  &__container {
-    position: absolute;
-    border-radius: 2px;
-    opacity: 0.800000011920929;
-    background: var(--dark-500, #171717);
-    height: 106px;
-    min-width: 152px;
-    bottom: -195px;
-    right: -479px;
-  }
-
-  &__plusBtn {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    cursor: pointer;
-  }
-
-  &__item {
-    position: relative;
-    cursor: pointer;
-  }
-
-  &__close {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    cursor: pointer;
-    transition: all .2s linear;
-
-    &:hover {
-      transform: scale(1.1);
-      background-color: red;
+    &__container {
+        position: absolute;
+        border-radius: 2px;
+        opacity: 0.800000011920929;
+        background: var(--dark-500, #171717);
+        height: 106px;
+        min-width: 152px;
+        bottom: -195px;
+        right: -479px;
     }
-  }
 
-  &__items {
-    display: flex;
-    height: 106px;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 60px;
-    gap: 12px;
-  }
+    &__plusBtn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        cursor: pointer;
+    }
+
+    &__item {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__close {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        cursor: pointer;
+        transition: all 0.2s linear;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: red;
+        }
+    }
+
+    &__items {
+        display: flex;
+        height: 106px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 60px;
+        gap: 12px;
+    }
 }

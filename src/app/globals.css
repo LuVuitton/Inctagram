@@ -23,7 +23,6 @@ body {
     font-weight: 400;
     background: var(--dark-700);
     color: var(--light-100);
-
 }
 
 @layer base {
@@ -44,10 +43,8 @@ body {
     }
 }
 
-
 body::-webkit-scrollbar {
     width: 10px; /* ширина всей полосы прокрутки */
-
 }
 
 body::-webkit-scrollbar-track {

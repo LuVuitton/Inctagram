@@ -1,251 +1,248 @@
 {
-  "SignUpPage": {
-    "title": "Sign Up",
-    "name": "Username",
-    "email": "Email",
-    "password": "Password",
-    "passwordConf": "Password confirmation",
-    "btnName": "Sign Up",
-    "question": "Do you have an account?",
-    "btnBottomName": "Sign In",
-    "agreemetsCheckText": "I agree to the <link>Terms of Service</link> and <link2>Privacy Policy</link2>",
-    "sentEmailConfirm": "We have sent a link to confirm your email to",
-    "nameExist": "User with this name is already exist",
-    "emailExist": "User with this email is already exist"
-  },
-  "SignInPage": {
-    "title": "Login",
-    "email": "Email",
-    "password": "Password",
-    "forgotPass": "Forgot password?",
-    "btnName": "Sign In",
-    "question": "Don’t have an account?",
-    "btnBottomName": "Sign Up",
-    "error400": "Invalid password or email",
-    "error401": "This email is not registered"
-
-  },
-  "EmailExpiredPage": {
-    "title": "Email verification link expired",
-    "desc": "Looks like the verification link has expired. Not to worry, we can send the link again\n\n",
-    "btnName": "Resend verification link"
-  },
-  "EmailVerificationPage": {
-    "title": "Congratulations!",
-    "desc": "Your email has been confirmed",
-    "btnName": "Sign In"
-  },
-  "ForgotPasswordPage": {
-    "title": "Forgot Password",
-    "email": "Email",
-    "desc": "Enter your email address and we will send you further instructions",
-    "btnName": "Send link",
-    "linkName": "Back to Sign In",
-    "descAfterSend": "The link has been sent by email. If you don’t receive an email send link again",
-    "btnNameAfterSend": "Send link again",
-    "modal": "We have sent a link to confirm your email to"
-  },
-  "MergerOfAccountsPage": {
-    "title": "Merger of Accounts",
-    "descBefore": "The user with email",
-    "descAfter": "is already in the system. Could we merge this accounts?",
-    "btnNameYes": "Yes, merge",
-    "btnNameNo": "No"
-  },
-  "VerificationInvalidPage": {
-    "title": "Email verification link invalid",
-    "desc": "Looks like the verification link has expired. Not to worry, we can send the link again",
-    "btnName": "Resend link"
-  },
-  "RecoveryPage": {
-    "title": "Create New Password",
-    "password": "Password",
-    "passwordConf": "Confirm password",
-    "desc": "Your password must be between 6 and 20 characters",
-    "btnName": "Create new password"
-  },
-  "RegistrationConfirmationPage": {
-    "title": "Congratulations!",
-    "desc": "Your email has been confirmed",
-    "btnName": "Sign In"
-  },
-  "NotFoundPage": {
-    "title": "Page not found",
-    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
-  },
-  "LocaleLayout": {
-    "title": "next-intl example"
-  },
-  "MyProfilePage": {
-    "subscriptions": "Subscriptions",
-    "subscribers": "Subscribers",
-    "publications": "Publications",
-    "btnName": "Profile Settings",
-    "aboutMe": "Fill in your info, while it's empty",
-    "SubscribersModal": {
-      "title": "Subscribers",
-      "search": "Search",
-      "subBtn": "Subscribe",
-      "deleteBtn": "Delete"
+    "SignUpPage": {
+        "title": "Sign Up",
+        "name": "Username",
+        "email": "Email",
+        "password": "Password",
+        "passwordConf": "Password confirmation",
+        "btnName": "Sign Up",
+        "question": "Do you have an account?",
+        "btnBottomName": "Sign In",
+        "agreemetsCheckText": "I agree to the <link>Terms of Service</link> and <link2>Privacy Policy</link2>",
+        "sentEmailConfirm": "We have sent a link to confirm your email to",
+        "nameExist": "User with this name is already exist",
+        "emailExist": "User with this email is already exist"
     },
-    "SubscriptionsModal": {
-      "title": "Subscriptions",
-      "search": "Search",
-      "unsubscribe": "Unsubscribe"
+    "SignInPage": {
+        "title": "Login",
+        "email": "Email",
+        "password": "Password",
+        "forgotPass": "Forgot password?",
+        "btnName": "Sign In",
+        "question": "Don’t have an account?",
+        "btnBottomName": "Sign Up",
+        "error400": "Invalid password or email",
+        "error401": "This email is not registered"
     },
-    "UnsubscribeModal": {
-      "title": "Unsubscribe",
-      "question": "Do you really want to unsubscribe from this user",
-      "btnYes": "Yes",
-      "btnNo": "No"
+    "EmailExpiredPage": {
+        "title": "Email verification link expired",
+        "desc": "Looks like the verification link has expired. Not to worry, we can send the link again\n\n",
+        "btnName": "Resend verification link"
     },
-    "DeleteModal": {
-      "title": "Delete Subscriber",
-      "question": "Do you really want to delete a subscriber",
-      "btnYes": "Yes",
-      "btnNo": "No"
+    "EmailVerificationPage": {
+        "title": "Congratulations!",
+        "desc": "Your email has been confirmed",
+        "btnName": "Sign In"
+    },
+    "ForgotPasswordPage": {
+        "title": "Forgot Password",
+        "email": "Email",
+        "desc": "Enter your email address and we will send you further instructions",
+        "btnName": "Send link",
+        "linkName": "Back to Sign In",
+        "descAfterSend": "The link has been sent by email. If you don’t receive an email send link again",
+        "btnNameAfterSend": "Send link again",
+        "modal": "We have sent a link to confirm your email to"
+    },
+    "MergerOfAccountsPage": {
+        "title": "Merger of Accounts",
+        "descBefore": "The user with email",
+        "descAfter": "is already in the system. Could we merge this accounts?",
+        "btnNameYes": "Yes, merge",
+        "btnNameNo": "No"
+    },
+    "VerificationInvalidPage": {
+        "title": "Email verification link invalid",
+        "desc": "Looks like the verification link has expired. Not to worry, we can send the link again",
+        "btnName": "Resend link"
+    },
+    "RecoveryPage": {
+        "title": "Create New Password",
+        "password": "Password",
+        "passwordConf": "Confirm password",
+        "desc": "Your password must be between 6 and 20 characters",
+        "btnName": "Create new password"
+    },
+    "RegistrationConfirmationPage": {
+        "title": "Congratulations!",
+        "desc": "Your email has been confirmed",
+        "btnName": "Sign In"
+    },
+    "NotFoundPage": {
+        "title": "Page not found",
+        "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+    },
+    "LocaleLayout": {
+        "title": "next-intl example"
+    },
+    "MyProfilePage": {
+        "subscriptions": "Subscriptions",
+        "subscribers": "Subscribers",
+        "publications": "Publications",
+        "btnName": "Profile Settings",
+        "aboutMe": "Fill in your info, while it's empty",
+        "SubscribersModal": {
+            "title": "Subscribers",
+            "search": "Search",
+            "subBtn": "Subscribe",
+            "deleteBtn": "Delete"
+        },
+        "SubscriptionsModal": {
+            "title": "Subscriptions",
+            "search": "Search",
+            "unsubscribe": "Unsubscribe"
+        },
+        "UnsubscribeModal": {
+            "title": "Unsubscribe",
+            "question": "Do you really want to unsubscribe from this user",
+            "btnYes": "Yes",
+            "btnNo": "No"
+        },
+        "DeleteModal": {
+            "title": "Delete Subscriber",
+            "question": "Do you really want to delete a subscriber",
+            "btnYes": "Yes",
+            "btnNo": "No"
+        }
+    },
+    "Navigation": {
+        "home": "Home",
+        "create": "Create",
+        "myProfile": "My profile",
+        "messenger": "Messenger",
+        "search": "Search",
+        "favourites": "Favourites",
+        "statistics": "Statistics",
+        "logout": "Log out",
+        "LogoutModal": {
+            "title": "Logout",
+            "question": "Are you really want to log out of your account ",
+            "btnYes": "Yes",
+            "btnNo": "No"
+        }
+    },
+    "SettingsProfilePage": {
+        "GeneralInformationTab": {
+            "titleTab": "General Information",
+            "username": "Username",
+            "firstname": "Firstname",
+            "lastname": "Lastname",
+            "birthday": "Date of birthday",
+            "city": "City",
+            "aboutMe": "About me",
+            "addBtn": "Add a profile photo",
+            "saveBtn": "Save changes"
+        },
+        "SettingsFormSchema": {
+            "userName": {
+                "matches": "Invalid characters in username",
+                "min": "Username must contain at least 6 characters",
+                "max": "Username must not exceed 30 characters",
+                "required": "Username is required"
+            },
+            "firstName": {
+                "matches": "Username can only contain alphabetic characters",
+                "min": "Name must contain at least 1 character",
+                "max": "Name must not exceed 50 characters",
+                "required": "Username is required"
+            },
+            "lastName": {
+                "matches": "Username can only contain alphabetic characters",
+                "min": "The name must contain at least 1 character",
+                "max": "The name must not exceed 50 characters",
+                "required": "Username is required"
+            },
+            "city": {
+                "max": "City must not exceed 15 characters"
+            },
+            "aboutMe": {
+                "matches": "User description can only contain alphabetic characters, numbers and special characters",
+                "min": "Minimum 1 character",
+                "max": "About yourself should not exceed 200 characters"
+            }
+        },
+        "DevicesTab": {
+            "titleTab": "Devices",
+            "title": "This device",
+            "status": "Online",
+            "active": "Active sessions",
+            "text": "You have not yet logged in from other devices"
+        },
+        "AccountManagementTab": {
+            "titleTab": "Account Management"
+        },
+        "MyPaymentsTab": {
+            "titleTab": "My Payments"
+        },
+        "AddPhotoModal": {
+            "title": "Add a profile photo",
+            "selectBtn": "Select from a computer",
+            "saveBtn": "Save"
+        }
+    },
+    "AgreemetsPage": {
+        "btnName": "Back to sign in",
+        "TermsOfService": {
+            "title": "Terms of Service",
+            "text": "There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious.  There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious"
+        },
+        "PrivacyPolicy": {
+            "title": "Privacy Policy",
+            "text": "There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious.  There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious"
+        }
+    },
+    "Errors": {
+        "userName": {
+            "required": "Username is required",
+            "min": "Username must be at least 6 characters",
+            "max": "Username must not exceed 30 characters",
+            "invalidCharacters": "Username must contain a-z, A-Z, 1-9",
+            "spaces": "Password must not contain spaces"
+        },
+        "email": {
+            "required": "Email is required",
+            "email": "Invalid email format",
+            "invalidCharacters": "Email must contain A-Z, a-z, ., @",
+            "spaces": "Email must not contain spaces"
+        },
+        "password": {
+            "required": "Password is required",
+            "min": "Password must be at least 6 characters",
+            "max": "Password must not exceed 20 characters",
+            "spaces": "Password must not contain spaces",
+            "invalidCharacters": "Password must contain latin characters",
+            "complexity": "Password must contain a-z, A-Z, 1-9, special "
+        },
+        "passwordConfirm": {
+            "required": "Password confirmation is required",
+            "min": "Password confirmation must be at least 6 characters",
+            "oneOf": "Passwords do not match"
+        },
+        "agreements": {
+            "required": "You must accept the agreements"
+        }
+    },
+    "Time": {
+        "now": "just now",
+        "minutes": {
+            "one": "minute ago",
+            "other": "minutes ago"
+        },
+        "hours": {
+            "one": "hour ago",
+            "other": "hours ago"
+        },
+        "days": {
+            "one": "day ago",
+            "other": "days ago"
+        },
+        "months": {
+            "one": "month ago",
+            "other": "months ago"
+        },
+        "years": {
+            "one": "year ago",
+            "other": "years ago"
+        }
     }
-  },
-  "Navigation": {
-    "home": "Home",
-    "create": "Create",
-    "myProfile": "My profile",
-    "messenger": "Messenger",
-    "search": "Search",
-    "favourites": "Favourites",
-    "statistics": "Statistics",
-    "logout": "Log out",
-    "LogoutModal": {
-      "title": "Logout",
-      "question": "Are you really want to log out of your account ",
-      "btnYes": "Yes",
-      "btnNo": "No"
-    }
-  },
-  "SettingsProfilePage": {
-    "GeneralInformationTab": {
-      "titleTab": "General Information",
-      "username": "Username",
-      "firstname": "Firstname",
-      "lastname": "Lastname",
-      "birthday": "Date of birthday",
-      "city": "City",
-      "aboutMe": "About me",
-      "addBtn": "Add a profile photo",
-      "saveBtn": "Save changes"
-    },
-    "SettingsFormSchema": {
-      "userName": {
-        "matches": "Invalid characters in username",
-        "min": "Username must contain at least 6 characters",
-        "max": "Username must not exceed 30 characters",
-        "required": "Username is required"
-      },
-      "firstName": {
-        "matches": "Username can only contain alphabetic characters",
-        "min": "Name must contain at least 1 character",
-        "max": "Name must not exceed 50 characters",
-        "required": "Username is required"
-      },
-      "lastName": {
-        "matches": "Username can only contain alphabetic characters",
-        "min": "The name must contain at least 1 character",
-        "max": "The name must not exceed 50 characters",
-        "required": "Username is required"
-      },
-      "city": {
-        "max": "City must not exceed 15 characters"
-      },
-      "aboutMe": {
-        "matches": "User description can only contain alphabetic characters, numbers and special characters",
-        "min": "Minimum 1 character",
-        "max": "About yourself should not exceed 200 characters"
-      }
-    },
-    "DevicesTab": {
-      "titleTab": "Devices",
-      "title": "This device",
-      "status": "Online",
-      "active": "Active sessions",
-      "text": "You have not yet logged in from other devices"
-    },
-    "AccountManagementTab": {
-      "titleTab": "Account Management"
-    },
-    "MyPaymentsTab": {
-      "titleTab": "My Payments"
-    },
-    "AddPhotoModal": {
-      "title": "Add a profile photo",
-      "selectBtn": "Select from a computer",
-      "saveBtn": "Save"
-    }
-  },
-  "AgreemetsPage": {
-    "btnName": "Back to sign in",
-    "TermsOfService": {
-      "title": "Terms of Service",
-      "text": "There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious.  There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious"
-    },
-    "PrivacyPolicy": {
-      "title": "Privacy Policy",
-      "text": "There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious.  There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious. There is a lot of important text here that says you agree to everything indiscriminately, various consents, many different words, it all looks very serious"
-    }
-  },
-  "Errors": {
-    "userName": {
-      "required": "Username is required",
-      "min": "Username must be at least 6 characters",
-      "max": "Username must not exceed 30 characters",
-      "invalidCharacters": "Username must contain a-z, A-Z, 1-9",
-      "spaces": "Password must not contain spaces"
-    },
-    "email": {
-      "required": "Email is required",
-      "email": "Invalid email format",
-      "invalidCharacters": "Email must contain A-Z, a-z, ., @",
-      "spaces": "Email must not contain spaces"
-
-    },
-    "password": {
-      "required": "Password is required",
-      "min": "Password must be at least 6 characters",
-      "max": "Password must not exceed 20 characters",
-      "spaces": "Password must not contain spaces",
-      "invalidCharacters": "Password must contain latin characters",
-      "complexity": "Password must contain a-z, A-Z, 1-9, special "
-
-    },
-    "passwordConfirm": {
-      "required": "Password confirmation is required",
-      "min": "Password confirmation must be at least 6 characters",
-      "oneOf": "Passwords do not match"
-    },
-    "agreements": {
-      "required": "You must accept the agreements"
-    }
-  },
-  "Time": {
-    "now": "just now",
-    "minutes": {
-      "one": "minute ago",
-      "other": "minutes ago"
-    },
-    "hours": {
-      "one": "hour ago",
-      "other": "hours ago"
-    },
-    "days": {
-      "one": "day ago",
-      "other": "days ago"
-    },
-    "months": {
-      "one": "month ago",
-      "other": "months ago"
-    },
-    "years": {
-      "one": "year ago",
-      "other": "years ago"
-    }
-  }
 }
