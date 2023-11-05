@@ -51,8 +51,9 @@ const slice = createSlice({
       if (state.imagesGallery.length >= 10) {
         toast.error("Max images count is 10!");
         return;
+      } else {
+        state.imagesGallery.push(action.payload);
       }
-      state.imagesGallery.push(action.payload);
     },
     changeImageFromPostGallery(state, action: PayloadAction<ImageStateType>) {
       const index = state.imagesGallery.findIndex((image) => image.id === action.payload.id);
