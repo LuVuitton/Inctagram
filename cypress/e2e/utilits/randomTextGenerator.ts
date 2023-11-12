@@ -1,3 +1,3 @@
 export const randomTextGenerator = () => {
-    return JSON.stringify(new Date().getTime());
+  return JSON.stringify(new Date().getTime());
 };
